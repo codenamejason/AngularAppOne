@@ -10,6 +10,7 @@
  */
 angular
   .module('newsFeedAppApp', [
+	'Firebase',
     'ngAnimate',
     'ngAria',
     'ngCookies',
