@@ -9,9 +9,12 @@
  *
  * Main module of the application.
  */
+
+
+
 angular
   .module('newsFeedAppApp', [
-	'Firebase',
+	'firebase',
     'ngAnimate',
     'ngAria',
     'ngCookies',
@@ -23,9 +26,9 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      .when('/post', {
+        templateUrl: 'views/post.html',
+        controller: 'PostCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
